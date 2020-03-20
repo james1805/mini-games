@@ -1,1 +1,13 @@
-<p>circle-tap works!</p>
+<div class="tap">
+    <div class="information">
+        <span class="nameGame">Tap!</span>
+        <span>{{time}}</span>
+        <span class="scoreGame">Score: {{puntaje}}</span>
+    </div>
+    <div class="tablero">
+        <div class="tapButton" (click)="tap()"></div>
+    </div>
+    <div *ngIf="time==0" class="gameOver">
+        <span>Game Over</span>
+    </div>
+</div>
