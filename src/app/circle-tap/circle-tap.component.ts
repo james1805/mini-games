@@ -46,8 +46,8 @@ export class CircleTapComponent implements OnInit {
      
         this.ejeX = Math.floor(Math.random() * (this.sizeScreenWidth - (this.sizeScreenWidth * 0.25))) + 1;
         this.ejeY = Math.floor(Math.random() * (this.sizeScreenHeight - (this.sizeScreenHeight * 0.25))) + 1; 
-        $(".tapButton").css({"margin-left": `${this.ejeX}px`, "margin-top": `${this.ejeY}px`});      
-      
+        $(".tapButton").css({"margin-left": `${this.ejeX}px`, "margin-top": `${this.ejeY}px`});  
+                  
         contador = contador - 1;
       
         this.drawFigure(contador);
